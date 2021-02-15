@@ -28,5 +28,14 @@ def create_np_array():
     print(f"linspace array: \n{a}")
 
 
+def basic_cal():
+    a = np.array([10,20,30,40])   # array([10, 20, 30, 40])
+    b = np.arange(4)              # array([0, 1, 2, 3])
+    print(f"basic cal: \na + b : \n{a+b}\n a - b : \n{a-b}\n a * b : \n{a*b}\n b**2 : \n{b**2}\n 10*np.sin(a): \n{10*np.sin(a)}\n")
+    print(f"numpy can also return conditional decision like b>2: {b>2}")
+
+
+
 if __name__ == "__main__":
-    create_np_array()
+    # create_np_array()
+    basic_cal()
